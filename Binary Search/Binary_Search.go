@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 // FUNCTION THAT APPLIES SELECTION SORT ON THE INPUT ARRAY
-func sort(arr []int) []int {
+func sort_func(arr []int) []int {
 	for i := range arr {
 		min := i
 		for j := i + 1; j < len(arr); j++ {
@@ -22,7 +22,7 @@ func sort(arr []int) []int {
 func binarySearch(arr []int, key int) bool {
 	low := 0
 	high := len(arr) - 1
-	arr = sort(arr)
+	arr = sort_func(arr)
 	for low <= high {
 		mid := (low + high) / 2
 		if arr[mid] == key {

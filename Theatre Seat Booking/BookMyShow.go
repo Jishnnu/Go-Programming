@@ -63,11 +63,11 @@ func seat_allocation(class *string, n *int) {
 					seat[key] = 0
 				}
 				break
-			}			
+			}
 		}
 	}
 	bill(class, n)
-	fmt.Print(seat, flag)
+	fmt.Print(seat)
 }
 
 func invoice() {

@@ -17,11 +17,11 @@ type Circle struct {
 	radius float64
 }
 
-func (r Rectangle) area() float64 {
+func (r *Rectangle) area() float64 {
 	return r.length * r.breadth
 }
 
-func (c Circle) area() float64 {
+func (c *Circle) area() float64 {
 	return math.Pi * c.radius
 }
 

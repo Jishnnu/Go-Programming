@@ -16,7 +16,7 @@ func main() {
 	name, _ := reader.ReadString('\n')
 
 	if len(name) == 0 {
-		return 
+		return
 	}
 
 	name = strings.ToUpper(name)

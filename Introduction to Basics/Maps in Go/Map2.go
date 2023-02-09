@@ -1,5 +1,3 @@
-// 20191CSE0215
-
 package main
 
 import "fmt"
